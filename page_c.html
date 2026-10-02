@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+    <!-- ส่วนของ HEAD -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chanintorn Chalermsuk - Portfolio</title>
+        <!-- ตั้งค่าการใช้งาน Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+        />
+        <!-- ตั้งค่าการใช้งาน Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <!-- ตั้งค่าการใช้งาน TailwindCSS  -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- ตั้งค่าการใช้งาน Google Font กับ TailwindCSS -->
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        bebus: ["Bebas Neue", "sans-serif"],
+                        prompt: ["Prompt", "sans-serif"],
+                        inter: ["Inter", "sans-serif"],
+                    },
+                    colors: {
+                        brandBg: "#000C58",
+                        brandDark: "#060135",
+                        brandBlue: "#7A99E9",
+                    }
+                },
+            },
+        };
+        </script>
+    </head>
+ 
+    <!-- ส่วนของ BODY -->
+    <body class="bg-brandBg text-white antialiased">
+        
+        <!-- ส่วนที่ 1 Nav Bar -->
+        <nav class="flex items-center justify-between py-6 px-10 max-w-7xl mx-auto w-full">
+            <!-- ส่วนเมนูด้านซ้าย -->
+            <div>
+                <a href="#" class="text-white uppercase font-bebus text-2xl tracking-widest">
+                    CHANINTORN CHALERMSUK
+                </a>
+            </div>
+            <!-- ส่วนเมนูด้านขวา -->
+            <div class="flex gap-8">
+                <a href="#" class="text-white font-inter text-sm hover:text-brandBlue transition">Work</a>
+                <a href="#" class="text-white font-inter text-sm hover:text-brandBlue transition">About</a>
+                <a href="#" class="text-white font-inter text-sm hover:text-brandBlue transition">Contact</a>
+            </div>
+        </nav>
+ 
+        <!-- Main Container -->
+        <main class="max-w-6xl mx-auto px-8 w-full mt-12">
+            
+            <!-- ส่วนที่ 2 Hero Section -->
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- ส่วนฝั่งซ้าย ข้อความ -->
+                <div class="w-full md:w-1/2 flex flex-col gap-2">
+                    <h1 class="text-white text-6xl md:text-7xl font-bebus leading-none">
+                        HI, I AM <br /> CHANINTORN C.
+                    </h1>
+                    <p class="text-gray-300 font-prompt text-lg mt-4 leading-relaxed max-w-lg">
+                        ผมเป็นนักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์ที่ทำงานอยู่ในกรุงเทพฯ กำลังมองหาโอกาสที่น่าตื่นเต้นในการทำงาน มีพื้นฐานการศึกษาด้านวิศวกรรมซอฟต์แวร์
+                    </p>
+                    
+                    <div class="mt-8 flex items-center gap-4">
+                        <a href="#" class="bg-brandBlue text-brandDark text-sm font-inter font-bold py-3 px-8 rounded-full hover:bg-white transition flex items-center gap-2">
+                            CONTACT ME <i class="bi bi-arrow-up-right-circle-fill"></i>
+                        </a>
+                        <a href="#" class="bg-brandDark text-brandBlue text-xl flex justify-center items-center w-12 h-12 rounded-full hover:bg-brandBlue hover:text-brandDark transition">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="bg-brandDark text-brandBlue text-xl flex justify-center items-center w-12 h-12 rounded-full hover:bg-brandBlue hover:text-brandDark transition">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+     
+                <!-- ส่วนฝั่งขวา แสดงรูป -->
+                <div class="w-full md:w-1/2 flex justify-end">
+                    <img src="./images/page_c/image 3.png" alt="Profile" class="w-full max-w-md rounded-3xl object-cover shadow-2xl">
+                </div>
+            </div>
+     
+            <!-- ตีเส้นแบ่ง -->
+            <div class="h-[1px] bg-white/10 w-full my-20"></div>
+     
+            <!-- ส่วนที่ 3 About ME -->
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- ส่วนข้อความ ABOUT ME (ซ้าย) -->
+                <div class="w-full md:w-1/3">
+                    <h2 class="text-white font-bebus text-5xl tracking-wide">ABOUT ME</h2>
+                </div>
+     
+                <!-- ส่วนของรายละเอียดของ About me (ขวา) -->
+                <div class="w-full md:w-2/3 flex flex-col gap-6">
+                    <p class="text-white font-prompt text-xl md:text-2xl leading-relaxed">
+                        ผมเป็นนักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์ที่ทำงานอยู่ในกรุงเทพฯ กำลังมองหาโอกาสที่น่าตื่นเต้นในการทำงานมีพื้นฐานการศึกษาด้าน วิศวกรรมซอฟต์แวร์
+                    </p>
+                    <p class="text-gray-300 font-prompt text-sm leading-relaxed">
+                        ชอบให้ความสำคัญกับการเข้าถึง (accessibility) เมื่อพัฒนาเว็บไซต์ มีความกระตือรือร้นและอยากรู้ อยากเห็นเกี่ยวกับการแก้ปัญหาต่างๆ 
+                        ปัจจุบันกำลังศึกษาเรียนรู้เกี่ยวกับ React.js และการออกแบบเว็บไซต์เล็กน้อย 
+                        เมื่อไม่ได้เขียนโปรแกรม ผมชอบเล่นฟุตบอล ถ่ายภาพ และเล่นเกม FIFA, Diablo 
+                        กำลังเรียนรู้เพิ่มเติมเพื่อพัฒนาทักษะอยู่เสมอ
+                    </p>
+                    <div class="mt-4 flex items-center gap-4">
+                        <a href="#" class="bg-brandBlue text-brandDark text-sm font-inter font-bold py-3 px-8 rounded-full hover:bg-white transition flex items-center gap-2">
+                            DOWNLOAD RESUME <i class="bi bi-arrow-down-circle-fill"></i>
+                        </a>
+                        <a href="#" class="bg-brandDark text-brandBlue text-xl flex justify-center items-center w-12 h-12 rounded-full hover:bg-brandBlue hover:text-brandDark transition">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="bg-brandDark text-brandBlue text-xl flex justify-center items-center w-12 h-12 rounded-full hover:bg-brandBlue hover:text-brandDark transition">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ส่วนรูปภาพแนวนอน (เต็มความกว้าง container) -->
+            <div class="mt-12 w-full">
+                <img src="./images/page_c/image 2.png" alt="Working" class="w-full h-auto rounded-3xl object-cover shadow-2xl"/>
+            </div>
+     
+            <!-- ตีเส้นแบ่ง -->
+            <div class="h-[1px] bg-white/10 w-full my-20"></div>
+     
+            <!-- ส่วนที่ 4 MY CAPABILITIES -->
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- ส่วนข้อความ (ซ้าย) -->
+                <div class="w-full md:w-1/3">
+                    <h2 class="text-white font-bebus text-5xl tracking-wide">MY CAPABILITIES</h2>
+                </div>
+                
+                <!-- ส่วนรายละเอียด (ขวา) -->
+                <div class="w-full md:w-2/3">
+                    <p class="text-gray-300 font-prompt text-sm leading-relaxed mb-8">
+                        ทักษะและความสามารถที่ผมมี ประสบการณ์การทำงาน และเครื่องมือที่ใช้ในการพัฒนาซอฟต์แวร์ ทั้งในส่วนของ Front-end และ Back-end
+                    </p>
+                    
+                    <!-- กล่องทักษะ (Tags) -->
+                    <div class="flex flex-wrap gap-4">
+                        <span class="border border-brandBlue/50 text-white font-inter font-bold text-xs px-8 py-3 rounded-full tracking-widest hover:bg-brandBlue hover:text-brandDark transition cursor-default">HTML</span>
+                        <span class="border border-brandBlue/50 text-white font-inter font-bold text-xs px-8 py-3 rounded-full tracking-widest hover:bg-brandBlue hover:text-brandDark transition cursor-default">CSS</span>
+                        <span class="border border-brandBlue/50 text-white font-inter font-bold text-xs px-8 py-3 rounded-full tracking-widest hover:bg-brandBlue hover:text-brandDark transition cursor-default">JAVASCRIPT</span>
+                        <span class="border border-brandBlue/50 text-white font-inter font-bold text-xs px-8 py-3 rounded-full tracking-widest hover:bg-brandBlue hover:text-brandDark transition cursor-default">FLUTTER</span>
+                        <span class="border border-brandBlue/50 text-white font-inter font-bold text-xs px-8 py-3 rounded-full tracking-widest hover:bg-brandBlue hover:text-brandDark transition cursor-default">DART</span>
+                        <span class="border border-brandBlue/50 text-white font-inter font-bold text-xs px-8 py-3 rounded-full tracking-widest hover:bg-brandBlue hover:text-brandDark transition cursor-default">IOT</span>
+                        <span class="border border-brandBlue/50 text-white font-inter font-bold text-xs px-8 py-3 rounded-full tracking-widest hover:bg-brandBlue hover:text-brandDark transition cursor-default">REACT</span>
+                        <span class="border border-brandBlue/50 text-white font-inter font-bold text-xs px-8 py-3 rounded-full tracking-widest hover:bg-brandBlue hover:text-brandDark transition cursor-default">DATABASE</span>
+                    </div>
+                </div>
+            </div>
+     
+            <!-- ตีเส้นแบ่ง -->
+            <div class="h-[1px] bg-white/10 w-full my-20"></div>
+     
+            <!-- ส่วนที่ 5 MY EXPERIENCE -->
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- ส่วนข้อความ (ซ้าย) -->
+                <div class="w-full md:w-1/3">
+                    <h2 class="text-white font-bebus text-5xl tracking-wide">MY EXPERIENCE</h2>
+                </div>
+                
+                <!-- ส่วนรายละเอียด (ขวา) -->
+                <div class="w-full md:w-2/3 flex flex-col gap-10">
+                    
+                    <!-- ประสบการณ์ 1 -->
+                    <div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 gap-2">
+                            <h3 class="text-white font-inter font-bold text-xl">Freelance Developer</h3>
+                            <span class="text-gray-400 font-inter text-sm">NOV 2023 — PRESENT</span>
+                        </div>
+                        <p class="text-gray-300 font-prompt text-sm leading-relaxed">
+                            พัฒนาและปรับปรุงเว็บไซต์ให้กับบริษัทต่างๆ โดยใช้ React.js ทำงานร่วมกับทีมออกแบบ (UX/UI) เพื่อสร้างระบบ UI ที่ใช้งานง่ายและตอบสนองความต้องการของผู้ใช้งาน มีส่วนร่วมในการออกแบบฟีเจอร์ต่างๆ และการทำงานร่วมกับระบบฐานข้อมูลและ API หลังบ้าน
+                        </p>
+                    </div>
+
+                    <!-- ประสบการณ์ 2 -->
+                    <div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 gap-2">
+                            <h3 class="text-white font-inter font-bold text-xl">Front-End Intern</h3>
+                            <span class="text-gray-400 font-inter text-sm">SEP 2023 — NOV 2023</span>
+                        </div>
+                        <p class="text-gray-300 font-prompt text-sm leading-relaxed">
+                            พัฒนาเว็บไซต์โดยใช้ HTML, CSS และ JavaScript เน้นการออกแบบเว็บให้เข้าถึงได้ (Accessibility) ตามมาตรฐาน WCAG ทำงานร่วมกับทีมพัฒนาเพื่อเชื่อมต่อระบบ Front-End กับ API 
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+     
+            <!-- ตีเส้นแบ่ง -->
+            <div class="h-[1px] bg-white/10 w-full my-20"></div>
+     
+            <!-- ส่วนที่ 6 LET'S CONNECT -->
+            <div class="flex flex-col md:flex-row gap-12 mb-20">
+                <!-- ส่วนด้านซ้าย ข้อความและไอคอน -->
+                <div class="w-full md:w-1/3 flex flex-col gap-6">
+                    <h2 class="text-white font-bebus text-5xl tracking-wide">LET'S CONNECT</h2>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-inter text-gray-300 text-sm">Say hello at chanintornc@sau.ac.th</span>
+                        <span class="font-inter text-gray-300 text-sm">For more info, here's my resume</span>
+                    </div>
+                    <div class="flex gap-6 mt-2">
+                        <a href="#" class="text-brandBlue text-xl hover:text-white transition"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-brandBlue text-xl hover:text-white transition"><i class="bi bi-github"></i></a>
+                        <a href="#" class="text-brandBlue text-xl hover:text-white transition"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-brandBlue text-xl hover:text-white transition"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+     
+                <!-- ส่วนด้านขวา Form ให้ป้อน -->
+                <div class="w-full md:w-2/3">
+                    <form action="#" class="flex flex-col gap-5">
+                        <div class="flex flex-col gap-2">
+                            <label class="font-inter text-white text-xs tracking-wider">Name</label>
+                            <input type="text" class="p-4 rounded-md bg-brandDark text-white border border-transparent focus:border-brandBlue focus:outline-none transition" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-inter text-white text-xs tracking-wider">Email</label>
+                            <input type="email" class="p-4 rounded-md bg-brandDark text-white border border-transparent focus:border-brandBlue focus:outline-none transition" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-inter text-white text-xs tracking-wider">Subject</label>
+                            <input type="text" class="p-4 rounded-md bg-brandDark text-white border border-transparent focus:border-brandBlue focus:outline-none transition" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-inter text-white text-xs tracking-wider">Message</label>
+                            <textarea rows="5" class="p-4 rounded-md bg-brandDark text-white border border-transparent focus:border-brandBlue focus:outline-none transition resize-none"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-brandBlue text-brandDark font-inter text-sm font-bold py-4 px-10 rounded-full hover:bg-white transition self-start mt-4">
+                            SUBMIT
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+   
+        <!-- ส่วนที่ 7 Copyright -->
+        <footer class="w-full border-t border-white/10 mt-12 py-8 text-center">
+            <span class="text-sm text-gray-400 font-inter">
+                © 2026 Created by SAU-Dev-team
+            </span>
+        </footer>
+ 
+    </body>
+</html>
