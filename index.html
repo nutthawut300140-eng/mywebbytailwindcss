@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Design Hub</title>
+    <!-- ตั้งค่า TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- ดึงฟอนต์มาจาก Google Fonts (ใช้ Mono ให้เหมือนในภาพ) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['"IBM Plex Mono"', 'monospace'],
+                    },
+                    colors: {
+                        brandGreen: '#b7fac6', /* สีเขียวมิ้นต์ตามภาพ */
+                        brandDark: '#333333'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brandGreen min-h-screen flex flex-col p-8 md:p-12 lg:p-16 font-mono text-gray-800">
+    
+    <!-- คอนเทนเนอร์หลัก (ซ้าย-ขวา) -->
+    <div class="flex-grow flex flex-col lg:flex-row gap-12 w-full max-w-[1500px] mx-auto">
+        
+        <!-- ซีกซ้าย: ข้อความบรรยาย และ ปุ่ม + รูป Page A, B -->
+        <div class="w-full lg:w-[45%] flex flex-col justify-between gap-16">
+            
+            <!-- ส่วนข้อความด้านบน -->
+            <div>
+                <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] font-bold leading-[1.1] mb-8 text-gray-900">
+                    My Web Design by <br> HTML CSS
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 max-w-2xl leading-relaxed text-gray-800">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate.
+                </p>
+                <a href="#" class="inline-block bg-brandDark text-white font-bold py-4 px-12 rounded-full text-xl hover:bg-black transition shadow-lg tracking-wide">
+                    Follow Me
+                </a>
+            </div>
+
+            <!-- ส่วนรูปภาพ Page A และ Page B (แนวนอน) -->
+            <div class="flex gap-6 mt-auto">
+                <!-- ลิงก์ไป Page A -->
+                <a href="page_a.html" class="block w-1/2 shadow-2xl rounded-sm overflow-hidden">
+                    <!-- ใส่รูป Thumbnail จริงๆ ไว้ที่นี่ -->
+                    <img src="./images/index/index1.png" alt="Preview Page A" class="w-full h-auto aspect-video object-contain" onerror="this.src='https://via.placeholder.com/600x400/000000/FFFFFF?text=Page+A'">
+                </a>
+                
+                <!-- ลิงก์ไป Page B -->
+                <a href="page_b.html" class="block w-1/2 shadow-2xl rounded-sm overflow-hidden">
+                    <!-- ใส่รูป Thumbnail จริงๆ ไว้ที่นี่ -->
+                    <img src="./images/index/index2.png" alt="Preview Page B" class="w-full h-auto aspect-video object-contain" onerror="this.src='https://via.placeholder.com/600x400/000000/FFFFFF?text=Page+B'">
+                </a>
+            </div>
+            
+        </div>
+
+        <!-- ซีกขวา: รูป Page C และ Page D (แนวตั้งยาว) -->
+        <div class="w-full lg:w-[55%] flex gap-6 mt-12 lg:mt-0 min-h-[500px] lg:min-h-0">
+            
+            <!-- ลิงก์ไป Page C -->
+            <a href="page_c.html" class="block w-1/2 relative shadow-2xl rounded-sm overflow-hidden">
+                <!-- ใส่รูป Thumbnail จริงๆ ไว้ที่นี่ -->
+                <img src="./images/index/index3.png" alt="Preview Page C" class="absolute inset-0 w-full h-full object-contain object-top" onerror="this.src='https://via.placeholder.com/600x900/000044/FFFFFF?text=Page+C'">
+            </a>
+            
+            <!-- ลิงก์ไป Page D -->
+            <a href="page_d.html" class="block w-1/2 relative shadow-2xl rounded-sm overflow-hidden">
+                <!-- ใส่รูป Thumbnail จริงๆ ไว้ที่นี่ -->
+                <img src="./images/index/index4.png" alt="Preview Page D" class="absolute inset-0 w-full h-full object-contain object-top" onerror="this.src='https://via.placeholder.com/600x900/933C24/FFFFFF?text=Page+D'">
+            </a>
+            
+        </div>
+
+    </div>
+
+    <!-- ส่วน Footer ด้านล่างสุด -->
+    <div class="mt-16 text-center font-medium text-lg lg:text-xl text-gray-800 leading-relaxed">
+        <p>(รูปและเนื้อหาทั้งหมดใช้เพื่อการศึกษาเท่านั้น)</p>
+        <p>Created by NinniN SAU</p>
+        <p>Copyright &copy; 2026 WoW WoW WoW</p>
+    </div>
+
+</body>
+</html>
